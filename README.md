@@ -4,7 +4,7 @@ Text Drawing on Graphic Canvas with CD Toolkit
 </h1>
 
 <h4 align="justify">
-The famous & widely used <i>OpenGL</i> graphics library lacks support for text drawing functions.
+The famous & widely used <i>OpenGL</i> graphics library lacks support for text drawing functionalities.
 <br>
 So how can we <i>draw text ??</i>
 <br>The solution to the problem would be simpler if we use <i>CD</i> toolkit.
@@ -28,10 +28,10 @@ This is a simple demonstration on how to draw <b>ASCII Text</b> as well as other
 <h3>Download This Demo</h3>
 <ul>
 <li>
-<a href="https://github.com/AKD92/Text-Drawing-in-Graphic-Canvas-with-CD/raw/master/bin/iup_cd_text_draw_demo.exe">Binary Executable (win32)</a> (Compiled using <a href="http://tdm-gcc.tdragon.net/about">TDM-GCC 5.1</a>)
+<a href="https://github.com/AKD92/Text-Drawing-in-Graphic-Canvas-with-CD/raw/master/bin/iup_cd_text_draw_demo.exe">Binary Executable</a> (Compiled using <a href="http://tdm-gcc.tdragon.net/about">TDM-GCC 5.1</a>)
 </li>
 <li>
-<a href="/src">Browse for source code</a> on GitHub
+<a href="/src">Browse for Source Codes in C</a> on GitHub
 </li>
 </ul>
 
