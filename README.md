@@ -7,10 +7,10 @@ Text Drawing on Graphic Canvas with CD Toolkit
 <b>
 <ul>
 <li>
-The famous & widely used <i>OpenGL</i> graphics library lacks support for text drawing functionalities.
+The famous & widely used <i>OpenGL</i> graphics library lacks support for text drawing facility.
 </li>
 <li>
-So how can we <i>draw text ??</i>
+So how can we <i>DRAW TEXT ??</i>
 </li>
 <li>
 The solution to the problem would be simpler if we use <i>CD</i> toolkit.
