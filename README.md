@@ -3,9 +3,12 @@
 Text Drawing on Graphic Canvas with CD Toolkit
 </h1>
 
-<p align="justify">
-The famous & widely used <b>OpenGL</b> graphics library lacks support for drawing text. So how can we draw text?? The solution of the problem would be simpler if we use <b>CD</b> toolkit.
-</p>
+<h4 align="justify">
+The famous & widely used <i>OpenGL</i> graphics library lacks support for text drawing functions.
+<br>
+So how can we <i>draw text ??</i>
+<br>The solution of the problem would be simpler if we use <i>CD</i> toolkit.
+</h4>
 
 <img src="/res/Text_Draw_CD_SCR1.png" alt="Text Drawing with CD" align="right">
 
