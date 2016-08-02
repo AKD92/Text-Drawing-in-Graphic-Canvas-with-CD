@@ -3,7 +3,7 @@
 Text Drawing on Graphic Canvas with CD Library
 </h1>
 
-<img src="Text_Draw_CD_SCR1.png" alt="Text Drawing with CD" align="right">
+<img src="/res/Text_Draw_CD_SCR1.png" alt="Text Drawing with CD" align="right">
 
 <p>
 The famous & widely used <b>OpenGL</b> graphics library lacks support for drawing text. Then how can we draw text?? A solution to this problem would be to use the <b>Canvas Draw (CD)</b> library, which is a free library for drawing arbitrary graphics.
@@ -22,7 +22,7 @@ This is a simple demonstration on how to draw ASCII Text as well as other graphi
 <a href="https://github.com/AKD92/Text-Drawing-in-Graphic-Canvas-with-CD/raw/master/bin/iup_cd_text_draw_demo.exe">Binary Executable (win32)</a> (Compiled using <a href="http://tdm-gcc.tdragon.net/about">TDM-GCC 5.1</a>)
 </li>
 <li>
-<a href="src">Browse for source code</a>
+<a href="/src">Browse for source code</a> on GitHub
 </li>
 </ul>
 
