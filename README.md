@@ -3,11 +3,12 @@
 Text Drawing on Graphic Canvas with CD Toolkit
 </h1>
 
-<img src="/res/Text_Draw_CD_SCR1.png" alt="Text Drawing with CD" align="right">
-
 <p align="justify">
 The famous & widely used <b>OpenGL</b> graphics library lacks support for drawing text. So how can we draw text?? The solution of the problem would be simpler if we use <b>CD</b> toolkit.
 </p>
+
+<img src="/res/Text_Draw_CD_SCR1.png" alt="Text Drawing with CD" align="right">
+
 <p align="justify">
 <b>Canvas Draw (CD)</b> is a vector graphics toolkit with device independent output. Developed by a Brazilian software company <b>Tecgraf/PUC-Rio</b>, it has the ability to draw text as well as general-purpose graphic primitives. It is implemented in several platforms using native graphics support: <i>Microsoft Windows (GDI)</i> and <i>X-Windows (XLIB)</i>.
 </p>
@@ -18,7 +19,7 @@ For text drawing, CD internally uses <b>FreeType</b>, an open-source and efficie
 CD contains functions to support <b>both vector and image</b> applications, and the visualization surface can be either a window or a more abstract surface, such as Image, Clipboard, Metafile, PS, and so on.
 </p>
 <p align="justify">
-This is a simple demonstration on how to draw ASCII Text as well as other graphic elements on the graphic canvas using CD.
+This is a simple demonstration on how to draw <b>ASCII Text</b> as well as other graphic elements on the canvas using CD.
 </p>
 
 <h3>Download This Demo</h3>
