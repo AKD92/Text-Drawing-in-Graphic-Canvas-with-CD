@@ -28,7 +28,7 @@ This is a simple demonstration on how to draw <b>ASCII Text</b> as well as other
 <h3>Download This Demo</h3>
 <ul>
 <li>
-<a href="https://github.com/AKD92/Text-Drawing-in-Graphic-Canvas-with-CD/raw/master/bin/iup_cd_text_draw_demo.exe">Binary Executable</a> (Compiled using <a href="http://tdm-gcc.tdragon.net/about">TDM-GCC 5.1</a>)
+<a href="https://github.com/AKD92/Text-Drawing-on-Graphic-Canvas-with-CD/raw/master/bin/iup_cd_text_draw_demo.exe">Binary Executable</a> (Compiled using <a href="http://tdm-gcc.tdragon.net/about">TDM-GCC 5.1</a>)
 </li>
 <li>
 <a href="/src">Browse for Source Codes in C</a> on GitHub
@@ -38,7 +38,7 @@ This is a simple demonstration on how to draw <b>ASCII Text</b> as well as other
 <h3>Related Links</h3>
 <ul>
 <li>
-<a href="http://webserver2.tecgraf.puc-rio.br/ftp_pub/lfm/cd.pdf">Overview of CD</a>
+<a href="http://webserver2.tecgraf.puc-rio.br/ftp_pub/lfm/cd.pdf">CD Toolkit Overview</a>
 </li>
 <li>
 <a href="https://webserver2.tecgraf.puc-rio.br/cd/">Canvas Draw (CD) Home Page</a>
