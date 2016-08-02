@@ -15,6 +15,9 @@ The famous & widely used <b>OpenGL</b> graphics library lacks support for drawin
 For text drawing, CD internally uses <b>FreeType</b>, an open-source and efficient font rendering engine.
 </p>
 <p align="justify">
+CD contains functions to support <b>both vector and image</b> applications, and the visualization surface can be either a window or a more abstract surface, such as Image, Clipboard, Metafile, PS, and so on.
+</p>
+<p align="justify">
 This is a simple demonstration on how to draw ASCII Text as well as other graphic elements on the graphic canvas using CD.
 </p>
 
