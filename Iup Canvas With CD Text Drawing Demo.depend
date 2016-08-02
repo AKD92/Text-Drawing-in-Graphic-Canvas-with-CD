@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1470150843 source:g:\ashish files\documents\dev c++ project files\all demos\iup canvas with cd text drawing demo\iup_cd_text_draw_resource.rc
+
+1470154340 source:g:\ashish files\documents\dev c++ project files\all demos\iup canvas with cd text drawing demo\src\gui_callbacks.c
+	<iup.h>
+	<cd.h>
+	<cdiup.h>
+	<string.h>
+
+1448885964 g:\ashish files\documents\dev c++ project files\_libraries\iup_mingw_libs\iup-3.17_win32_mingw4_lib\include\iup.h
+	"iupkey.h"
+	"iupdef.h"
+
+1437855078 g:\ashish files\documents\dev c++ project files\_libraries\iup_mingw_libs\iup-3.17_win32_mingw4_lib\include\iupkey.h
+
+1437855078 g:\ashish files\documents\dev c++ project files\_libraries\iup_mingw_libs\iup-3.17_win32_mingw4_lib\include\iupdef.h
+
+1442311624 g:\ashish files\documents\dev c++ project files\_libraries\iup_mingw_libs\cd-5.9_win32_mingw4_lib\include\cd.h
+
+1406728920 g:\ashish files\documents\dev c++ project files\_libraries\iup_mingw_libs\cd-5.9_win32_mingw4_lib\include\cdiup.h
+
+1470154427 source:g:\ashish files\documents\dev c++ project files\all demos\iup canvas with cd text drawing demo\src\main_program.c
+	<iup.h>
+	<cd.h>
+	<stdio.h>
+	<string.h>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Iup Canvas With CD Text Drawing Demo" />
+		<Option pch_mode="2" />
+		<Option compiler="tdm_gcc_32-bit_compiler" />
+		<Build>
+			<Target title="Release">
+				<Option platforms="Windows;Unix;" />
+				<Option output="bin/iup_cd_text_draw_demo.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="tdm_gcc_32-bit_compiler" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-std=c99" />
+					<Add option="-m32" />
+					<Add directory="../../_libraries/Iup_MinGW_Libs/iup-3.17_Win32_mingw4_lib/include" />
+					<Add directory="../../_libraries/Iup_MinGW_Libs/cd-5.9_Win32_mingw4_lib/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m32" />
+					<Add library="iup" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="comctl32" />
+					<Add library="uuid" />
+					<Add library="oleaut32" />
+					<Add library="ole32" />
+					<Add library="iupcd" />
+					<Add library="cd" />
+					<Add library="freetype6" />
+					<Add library="z" />
+					<Add directory="../../_libraries/Iup_MinGW_Libs/iup-3.17_Win32_mingw4_lib" />
+					<Add directory="../../_libraries/Iup_MinGW_Libs/cd-5.9_Win32_mingw4_lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="Program_Resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/GUI_Callbacks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Main_Program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
