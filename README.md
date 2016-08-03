@@ -1,12 +1,9 @@
-
-<p>
 <h1>
 Rendering Text Data on Canvas with CD Toolkit
 </h1>
 <h3><i>
 A direct approach...
 </i></h3>
-</p>
 
 <p>
 <b>
@@ -24,10 +21,9 @@ The solution to the problem would be simpler if we use <i>CD</i> toolkit.
 </b>
 </p>
 
-
-<img src="/res/Text_Draw_CD_SCR1.png" alt="Text Drawing with CD" align="right">
-
 <p align="justify">
+<br>
+<img src="/res/Text_Draw_CD_SCR1.png" alt="Text Drawing with CD" align="right">
 <b>Canvas Draw (CD)</b> is a vector graphics toolkit with device independent output. Developed by a Brazilian software company <b>Tecgraf/PUC-Rio</b>, CD has the ability to draw text as well as graphic primitives. It is implemented in several platforms using native graphics support: <i>Microsoft Windows (GDI)</i> and <i>X-Windows (XLIB)</i>.
 </p>
 
