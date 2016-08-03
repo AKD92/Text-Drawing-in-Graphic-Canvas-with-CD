@@ -57,9 +57,9 @@ This is a simple demonstration on how to draw <b>Ascii Characters & Text</b> as 
 <a href="https://webserver2.tecgraf.puc-rio.br/cd/">Canvas Draw (CD) Home Page</a>
 </b></li>
 <li><b>
-<a href="http://learnopengl.com/#!In-Practice/Text-Rendering">The 'OpenGL' way of Text Rendering</a>
+<a href="http://learnopengl.com/#!In-Practice/Text-Rendering">Indirect Approach of Text Rendering with OpenGL</a>
 </b></li>
 <li><b>
-<a href="https://www.freetype.org/">The FreeType Project</a>
+<a href="https://www.freetype.org/">The FreeType Project Home Page</a>
 </b></li>
 </ul>
