@@ -13,16 +13,15 @@
 
 
 #include <iup.h>
-#include <cd.h>
 #include <stdio.h>
 #include <string.h>
 
 
 
+#define BUFFER_SIZE             2 * 1024
 #define TXTFSIZE                "txtFsize"
 #define TXTENTRY                "txtEntry"
 #define CANVAS_IUP              "iup_canvas"
-#define CANVAS_CD               "cd_canvas"
 
 
 
@@ -30,7 +29,7 @@
 
 
 int iFontSize;
-char strMessage[2 * 1024];
+char strMessage[BUFFER_SIZE];
 
 
 
@@ -38,16 +37,16 @@ char strMessage[2 * 1024];
 
 
 int main(void);
-Ihandle *createMainWindow(void);
+static Ihandle *createMainWindow(void);
 
 
 int cb_btnExit(Ihandle *btn);
 int cb_btnDraw(Ihandle *btn);
-int cb_canvasMap(Ihandle *canvas);
-int cb_canvasUnmap(Ihandle *canvas);
-int cb_canvasDraw(Ihandle *canvas, float posx, float posy);
-int cd_canvasResize(Ihandle *canvas, int width, int height);
-int cb_canvasMouse(Ihandle *canvas, int x, int y, char *status);
+int cb_canvasMap(Ihandle *dispCanvas);
+int cb_canvasUnmap(Ihandle *dispCanvas);
+int cb_canvasDraw(Ihandle *dispCanvas, float posx, float posy);
+int cb_canvasResize(Ihandle *dispCanvas, int width, int height);
+int cb_canvasMouse(Ihandle *dispCanvas, int x, int y, char *status);
 
 
 
@@ -57,17 +56,17 @@ int cb_canvasMouse(Ihandle *canvas, int x, int y, char *status);
 
 int main(void) {
     
-    char *sMsg;
     Ihandle *dlgMain;
+    const char *strInitMsg;
     
-    sMsg = "\"Never in the field\
+    strInitMsg = "\"Never in the field\
 \nof human conflict\
 \nwas so much owed\
 \nby so many, to so few...\"\
 \n\n    -    Winston Churchill";
     
     iFontSize = 18;
-    strcpy(strMessage, sMsg);
+    strcpy(strMessage, strInitMsg);
     
     IupOpen(0, 0);
     {
@@ -76,6 +75,7 @@ int main(void) {
 //      IupSetAttribute(dlgMain, "PLACEMENT", "MAXIMIZED");
         IupShowXY(dlgMain, IUP_CENTER, IUP_CENTER);
         IupMainLoop();
+        IupDestroy(dlgMain);
     }
     IupClose();
     return 0;
@@ -84,16 +84,16 @@ int main(void) {
 
 
 
-Ihandle *createMainWindow(void) {
+static Ihandle *createMainWindow(void) {
     
     Ihandle *dlgMain;
-    Ihandle *canvas, *btnExit, *txtEntry, *btnDraw;
-    Ihandle *editVbox, *cmdHbox, *wholeVbox;
+    Ihandle *dispCanvas, *btnExit, *txtEntry, *btnDraw;
+    Ihandle *editVbox, *cmdHbox, *fullVbox;
     Ihandle *txtFontSize, *lblFontSize;
     
     txtEntry = IupText(0);
     IupSetAttribute(txtEntry, "RASTERSIZE", "x120");
-    IupSetAttribute(txtEntry, "EXPAND", "YES");
+    IupSetAttribute(txtEntry, "EXPAND", "HORIZONTAL");
 //  IupSetAttribute(txtEntry, "FONTSIZE", "11");
     IupSetAttribute(txtEntry, "MULTILINE", "YES");
     IupSetAttribute(txtEntry, "WORDWRAP", "YES");
@@ -122,32 +122,32 @@ Ihandle *createMainWindow(void) {
     editVbox = IupVbox(txtEntry, cmdHbox, 0);
     IupSetAttribute(editVbox, "EXPAND", "HORIZONTAL");
     IupSetAttribute(editVbox, "NGAP", "7");
-    IupSetAttribute(editVbox, "NMARGIN", "0x5");
+    IupSetAttribute(editVbox, "NMARGIN", "0x0");
     
-    canvas = IupCanvas(0);
-    IupSetAttribute(canvas, "EXPAND", "YES");
-    IupSetAttribute(canvas, "SCROLLBAR", "NO");
-    IupSetCallback(canvas, "MAP_CB", (Icallback) cb_canvasMap);
-    IupSetCallback(canvas, "UNMAP_CB", (Icallback) cb_canvasUnmap);
-    IupSetCallback(canvas, "ACTION", (Icallback) cb_canvasDraw);
-    IupSetCallback(canvas, "RESIZE_CB", (Icallback) cd_canvasResize);
-    IupSetCallback(canvas, "MOTION_CB", (Icallback) cb_canvasMouse);
+    dispCanvas = IupCanvas(0);
+    IupSetAttribute(dispCanvas, "EXPAND", "YES");
+    IupSetAttribute(dispCanvas, "SCROLLBAR", "NO");
+    IupSetCallback(dispCanvas, "MAP_CB", (Icallback) cb_canvasMap);
+    IupSetCallback(dispCanvas, "UNMAP_CB", (Icallback) cb_canvasUnmap);
+    IupSetCallback(dispCanvas, "ACTION", (Icallback) cb_canvasDraw);
+    IupSetCallback(dispCanvas, "RESIZE_CB", (Icallback) cb_canvasResize);
+    IupSetCallback(dispCanvas, "MOTION_CB", (Icallback) cb_canvasMouse);
     
     btnExit = IupButton("Exit To System", 0);
     IupSetAttribute(btnExit, "RASTERSIZE", "105x30");
     IupSetCallback(btnExit, "ACTION", (Icallback) cb_btnExit);
     
-    wholeVbox = IupVbox(editVbox, canvas, btnExit, 0);
-    IupSetAttribute(wholeVbox, "ALIGNMENT", "ARIGHT");
-    IupSetAttribute(wholeVbox, "EXPAND", "YES");
-    IupSetAttribute(wholeVbox, "NGAP", "10");
-    IupSetAttribute(wholeVbox, "NMARGIN", "12x12");
+    fullVbox = IupVbox(editVbox, dispCanvas, btnExit, 0);
+    IupSetAttribute(fullVbox, "ALIGNMENT", "ARIGHT");
+    IupSetAttribute(fullVbox, "EXPAND", "YES");
+    IupSetAttribute(fullVbox, "NGAP", "10");
+    IupSetAttribute(fullVbox, "NMARGIN", "15x15");
     
     IupSetHandle(TXTENTRY, txtEntry);
-    IupSetHandle(CANVAS_IUP, canvas);
+    IupSetHandle(CANVAS_IUP, dispCanvas);
     IupSetHandle(TXTFSIZE, txtFontSize);
     
-    dlgMain = IupDialog(wholeVbox);
+    dlgMain = IupDialog(fullVbox);
     IupSetAttribute(dlgMain, "TITLE", "Text Drawing With CD (akd.bracu@gmail.com)");
     IupSetAttribute(dlgMain, "SHRINK", "YES");
     IupSetAttribute(dlgMain, "MINSIZE", "350x360");
