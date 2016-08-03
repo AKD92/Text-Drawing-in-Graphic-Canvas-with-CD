@@ -1,7 +1,12 @@
 
+<p>
 <h1>
-Graphically Drawing Text Data on Canvas with CD Toolkit
+Rendering Text Data on Canvas with CD Toolkit
 </h1>
+<h3><i>
+A direct approach...
+</i></h3>
+</p>
 
 <p>
 <b>
