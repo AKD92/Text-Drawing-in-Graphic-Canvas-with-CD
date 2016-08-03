@@ -28,7 +28,7 @@ The solution to the problem would be simpler if we use <i>CD</i> toolkit.
 <img src="/res/Text_Draw_CD_SCR1.png" alt="Text Drawing with CD" align="right">
 
 <p align="justify">
-<b>Canvas Draw (CD)</b> is a <i>vector graphics toolkit</i> with <i>device independent output</i>. Developed by a Brazilian software company <b>Tecgraf/PUC-Rio</b>, CD has the ability to draw text as well as graphic primitives. It is implemented in several platforms using native graphics support: <i>Microsoft Windows (GDI)</i> and <i>X-Windows (XLIB)</i>.
+<b>Canvas Draw (CD)</b> is a vector graphics toolkit with device independent output. Developed by a Brazilian software company <b>Tecgraf/PUC-Rio</b>, CD has the ability to draw text as well as graphic primitives. It is implemented in several platforms using native graphics support: <i>Microsoft Windows (GDI)</i> and <i>X-Windows (XLIB)</i>.
 </p>
 
 <p align="justify">
@@ -40,7 +40,7 @@ CD contains functions to support <b>both vector and raster image applications</b
 </p>
 
 <p align="justify">
-This is a simple demonstration on how to draw <b>Ascii Characters & Text</b> as well as other graphic elements on the canvas using CD.
+This application is a simple demonstration on how to render <b>Ascii Characters & Text</b> as well as other graphic elements on the canvas using CD.
 </p>
 
 <h3>Download This Demo</h3>
@@ -51,7 +51,7 @@ Standalone Executable (Win32)</a>
 <br>Compiled using <a href="http://tdm-gcc.tdragon.net/about">TDM-GCC 5.1</a>
 </b></li>
 <li><b>
-<a href="/src">Browse for Source Codes in C</a> on GitHub
+<a href="/src">Browse for Source Codes</a> on GitHub
 </b></li>
 </ul>
 
