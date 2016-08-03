@@ -28,7 +28,7 @@ The solution to the problem would be simpler if we use <i>CD</i> toolkit.
 </p>
 
 <p align="justify">
-For text drawing, CD internally uses <b>FreeType</b>, an open-source and efficient font rendering engine.
+For drawing text & characters, CD internally relies on <b>FreeType</b>, an open-source and efficient font rendering engine.
 </p>
 
 <p align="justify">
