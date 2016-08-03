@@ -46,7 +46,8 @@ This is a simple demonstration on how to draw <b>Ascii Characters & Text</b> as 
 <h3>Download This Demo</h3>
 <ul>
 <li><b>
-<a href="https://github.com/AKD92/Text-Drawing-on-Graphic-Canvas-with-CD/raw/master/bin/iup_cd_text_draw_demo.exe">Binary Executable</a> (Compiled using <a href="http://tdm-gcc.tdragon.net/about">TDM-GCC 5.1</a>)
+<a href="https://github.com/AKD92/Text-Rendering-on-Graphic-Canvas-with-CD/raw/master/bin/iup_cd_text_draw_demo.exe">
+Binary Executable</a> (Compiled using <a href="http://tdm-gcc.tdragon.net/about">TDM-GCC 5.1</a>)
 </b></li>
 <li><b>
 <a href="/src">Browse for Source Codes in C</a> on GitHub
@@ -62,7 +63,8 @@ This is a simple demonstration on how to draw <b>Ascii Characters & Text</b> as 
 <a href="https://webserver2.tecgraf.puc-rio.br/cd/">Canvas Draw (CD) Home Page</a>
 </b></li>
 <li><b>
-<a href="http://learnopengl.com/#!In-Practice/Text-Rendering">Indirect Approach of Text Rendering with OpenGL</a>
+<a href="http://learnopengl.com/#!In-Practice/Text-Rendering">
+Indirect Approach of Text Rendering with OpenGL & FreeType</a>
 </b></li>
 <li><b>
 <a href="https://www.freetype.org/">The FreeType Project Home Page</a>
