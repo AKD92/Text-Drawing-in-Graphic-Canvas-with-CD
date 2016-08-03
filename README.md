@@ -47,7 +47,8 @@ This is a simple demonstration on how to draw <b>Ascii Characters & Text</b> as 
 <ul>
 <li><b>
 <a href="https://github.com/AKD92/Text-Rendering-on-Graphic-Canvas-with-CD/raw/master/bin/iup_cd_text_draw_demo.exe">
-Binary Executable</a> (Compiled using <a href="http://tdm-gcc.tdragon.net/about">TDM-GCC 5.1</a>)
+Standalone Executable (Win32)</a>
+<br>Compiled using <a href="http://tdm-gcc.tdragon.net/about">TDM-GCC 5.1</a>
 </b></li>
 <li><b>
 <a href="/src">Browse for Source Codes in C</a> on GitHub
