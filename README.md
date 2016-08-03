@@ -64,7 +64,7 @@ Binary Executable</a> (Compiled using <a href="http://tdm-gcc.tdragon.net/about"
 </b></li>
 <li><b>
 <a href="http://learnopengl.com/#!In-Practice/Text-Rendering">
-Indirect Approach of Text Rendering with OpenGL & FreeType</a>
+Indirect Approach to Rendering Text with OpenGL & FreeType</a>
 </b></li>
 <li><b>
 <a href="https://www.freetype.org/">The FreeType Project Home Page</a>
