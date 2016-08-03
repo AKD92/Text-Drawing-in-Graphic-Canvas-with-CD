@@ -60,7 +60,8 @@ Binary Executable</a> (Compiled using <a href="http://tdm-gcc.tdragon.net/about"
 <a href="http://webserver2.tecgraf.puc-rio.br/ftp_pub/lfm/cd.pdf">CD Toolkit Overview</a>
 </b></li>
 <li><b>
-<a href="https://webserver2.tecgraf.puc-rio.br/cd/">Canvas Draw (CD) Home Page</a>
+<a href="https://sourceforge.net/projects/canvasdraw/?source=directory">
+Canvas Draw (CD) @ SourceForge</a>
 </b></li>
 <li><b>
 <a href="http://learnopengl.com/#!In-Practice/Text-Rendering">
