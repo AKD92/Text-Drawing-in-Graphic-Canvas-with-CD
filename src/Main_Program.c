@@ -59,11 +59,11 @@ int main(void) {
     Ihandle *dlgMain;
     const char *strInitMsg;
     
-    strInitMsg = "\"Never in the field\
-\nof human conflict\
-\nwas so much owed\
-\nby so many, to so few...\"\
-\n\n    -    Winston Churchill";
+    strInitMsg = "\"Never in the field"
+                "\nof human conflict"
+                "\nwas so much owed"
+                "\nby so many, to so few...\""
+                "\n\n    -    Winston Churchill";
     
     iFontSize = 18;
     strcpy(strMessage, strInitMsg);
